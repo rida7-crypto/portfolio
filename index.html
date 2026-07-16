@@ -11,6 +11,17 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="cursor-arrow" id="cursorArrow">
+  <svg viewBox="0 0 100 100" width="100%" height="100%">
+    <path d="M20 10 L85 45 L50 55 L35 90 Z" fill="rgba(56, 200, 255, 0.9)"/>
+  </svg>
+</div>
+<div class="ambient-bg" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+</div>
+<canvas id="networkCanvas" class="network-canvas" aria-hidden="true"></canvas>
 
 <!-- Mode indicator (signature element) -->
 <div class="mode-rail" id="modeRail">
@@ -81,10 +92,18 @@
         <p>Outside the codebase, I design — brand identity, digital art, and event creative direction. I like that the two disciplines borrow from each other more than people expect: both are about building systems that hold up under real use.</p>
       </div>
     </div>
-    <ul class="skills-strip">
-      <li>Python</li><li>FastAPI</li><li>Flask</li><li>Docker</li><li>Pandas</li><li>Scikit-Learn</li>
-      <li>LLM Agents</li><li>Prompt Engineering</li><li>SQL</li><li>Power BI</li><li>Figma / Visual Design</li>
-    </ul>
+
+    <div class="marquee">
+      <ul class="skills-strip">
+        <li>Python</li><li>FastAPI</li><li>Flask</li><li>Docker</li><li>Pandas</li><li>Scikit-Learn</li>
+        <li>LLM Agents</li><li>Prompt Engineering</li><li>SQL</li><li>Power BI</li><li>Figma / Visual Design</li>
+      </ul>
+      <ul class="skills-strip" aria-hidden="true">
+        <li>Python</li><li>FastAPI</li><li>Flask</li><li>Docker</li><li>Pandas</li><li>Scikit-Learn</li>
+        <li>LLM Agents</li><li>Prompt Engineering</li><li>SQL</li><li>Power BI</li><li>Figma / Visual Design</li>
+      </ul>
+    </div>
+
     <p class="leetcode-link"><a href="https://leetcode.com/u/7077rida/" target="_blank" rel="noopener">LeetCode profile ↗</a></p>
   </div>
 </section>
